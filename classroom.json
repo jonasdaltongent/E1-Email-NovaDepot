@@ -1,0 +1,28 @@
+{
+  "_uitleg": "Wordt gelezen door _tools/zet_opdracht_klaar.py (zie _tools/CLASSROOM-KOPPELING.md). Dit bestand staat openbaar op GitHub: zet hier nooit een e-mailadres of wachtwoord in. {deadline} vult het script zelf in; de deadline komt uit lesdoelen.json.",
+  "_deadline_per_klas": "Het script kent één deadline per run. De concepten zijn per klas gemaakt met de deadline van die klas (einde van het lesuur): 3ORLO wo 2026-11-18T10:05, 4ORLOb wo 2026-11-18T11:15, 4ORLOa do 2026-11-19T14:35. Zet bij een nieuwe run 'klassen' en 'deadline' tijdelijk op één klas.",
+  "titel": "Communicatie 5 — E1: de e-mailopdracht",
+  "onderwerp": "Digitale competenties",
+  "klassen": [
+    "3ORLO",
+    "4ORLOa",
+    "4ORLOb"
+  ],
+  "punten": 20,
+  "instructie": [
+    "1. Open de lespagina (link) en je werkdocument CO5_E1-e-mailopdracht.",
+    "2. Dit is een evaluatie: je werkt alleen. Je schrijft de e-mail in je werkdocument en maakt de afspraak in Google Agenda.",
+    "3. Klik op Inleveren, ten laatste {deadline}."
+  ],
+  "bijlagen": [
+    {
+      "soort": "link",
+      "url": "https://jonasdaltongent.github.io/E1-Email-NovaDepot/"
+    },
+    {
+      "soort": "kopie",
+      "bestand": "werkdocument/CO5_E1-e-mailopdracht.docx",
+      "naam": "CO5_E1-e-mailopdracht"
+    }
+  ]
+}

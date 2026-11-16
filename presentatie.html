@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E1: de e-mailopdracht · dia's · NovaDepot</title>
+  <link rel="icon" href="assets/novadepot-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/slides.css">
+  <style>
+    .compact .two { flex: 0 0 auto; }
+    .compact .panel p { margin-bottom: 10px; }
+    .compact .panel p:last-child { margin-bottom: 0; }
+    .qhead { font-size: 30px; font-weight: 700; margin: 0 0 6px; }
+    .qcol .opt { font-size: 26px; padding: 8px 16px; }
+    .qcol .opt .n { width: 46px; height: 46px; font-size: 24px; }
+    .klok { font-size: 22px; color: #4D5573; }
+    .steps1 { margin: 0; padding-left: 1.2em; }
+    .steps1 li { font-size: 27px; margin-bottom: 14px; }
+    .steps1 li:last-child { margin-bottom: 0; }
+    .lbl { font-weight: 700; font-size: 22px !important; margin: 0 0 10px; color: var(--navy-deep); }
+    .rood { color: #A0372A; font-weight: 700; }
+    .groen { color: #1F7A55; font-weight: 700; }
+    .vond { list-style: none; padding: 0 !important; margin: 0 0 14px; display: grid; gap: 12px; }
+    .vond li { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: center; background: #fff; border: 2px solid #D6D5CB; border-radius: 14px; padding: 10px 18px; font-size: 26px !important; margin: 0 !important; line-height: 1.3; }
+    .vond .nr { width: 46px; height: 46px; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 700; font-size: 24px; display: flex; align-items: center; justify-content: center; }
+    /* een nagemaakt venster Nieuw bericht (kijk naar de mail van Tom) */
+    .dmail { background: #fff; border: 2px solid #9AA0A6; border-radius: 12px 12px 6px 6px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; font-size: 23px; color: #202124; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .dm-kop { background: #F2F6FC; font-weight: 700; font-size: 20px; padding: 8px 18px; }
+    .dm-veld { display: flex; gap: 14px; padding: 8px 18px; border-bottom: 1px solid #E3E3E3; font-size: 21px; }
+    .dm-veld span { color: #5F6368; min-width: 120px; }
+    .dm-veld .leeg { color: #A0372A; font-style: italic; }
+    .dm-tekst { padding: 14px 18px 4px; }
+    .dm-tekst p { margin: 0 0 12px !important; font-size: 23px !important; line-height: 1.3 !important; }
+    /* de zes bouwstenen: een nummer en de naam links, wat erin staat rechts */
+    .dbouw { background: #fff; border: 2px solid #9AA0A6; border-radius: 12px 12px 6px 6px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .db-kop { background: #F2F6FC; font-weight: 700; font-size: 21px; padding: 6px 18px; }
+    .db-veld { display: flex; gap: 14px; padding: 6px 18px; border-bottom: 1px solid #E3E3E3; font-size: 22px; color: #5F6368; }
+    .db-veld span { min-width: 150px; }
+    .db-rij { display: grid; grid-template-columns: 290px 1fr; gap: 16px; align-items: center; padding: 10px 18px; border-bottom: 1px dashed #D6D5CB; }
+    .db-rij:last-child { border-bottom: 0; }
+    .db-naam { display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--navy-deep); font-size: 27px; }
+    .db-naam b { flex: none; width: 42px; height: 42px; border-radius: 50%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 23px; }
+    .db-tekst { font-size: 26px; color: #202124; line-height: 1.2; }
+    .ondw { background: #fff; border: 3px solid var(--navy); border-radius: 12px; padding: 8px 16px; margin: 0; font-family: Arial, sans-serif; font-size: 24px !important; line-height: 1.25 !important; }
+    .ondw .lblk { display: block; font-size: 18px; color: #5F6368; margin-bottom: 2px; }
+    .ondw.slecht { border-color: #A0372A; }
+    .ondw.goed { border-color: var(--ok); }
+    .groot { font-size: 30px !important; }
+    .markeer { background: #FCD6CF; border-radius: 6px; padding: 0 8px; font-weight: 700; }
+    /* les 12: wie ziet welk adres, en de bijlage als chip */
+    .dmail .dm-veld.rij { align-items: flex-start; }
+    .dm-veld .lijn { display: block; line-height: 1.25; }
+    .dm-veld b { font-weight: 400; }
+    .kaartjes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .kaartje { background: #fff; border: 3px solid var(--navy); border-radius: 14px; padding: 10px 14px; font-size: 24px; line-height: 1.2; }
+    .kaartje b { display: block; font-size: 26px; color: var(--navy-deep); }
+    .kaartje span { font-size: 19px; color: #5F6368; word-break: break-all; }
+    .pdf { display: flex; align-items: center; gap: 16px; background: #fff; border: 2px solid #9AA0A6; border-radius: 14px; padding: 16px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 25px; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .pdf .tag { flex: none; background: #D93025; color: #fff; border-radius: 6px; font-size: 22px; font-weight: 700; padding: 6px 10px; }
+    .pdf small { display: block; font-size: 20px; color: #5F6368; }
+    .regel3 { list-style: none; padding: 0 !important; margin: 0; display: grid; gap: 10px; }
+    .regel3 li { display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center; background: #fff; border: 2px solid #D6D5CB; border-radius: 14px; padding: 10px 18px; font-size: 27px !important; margin: 0 !important; line-height: 1.25; }
+    .regel3 .w { font-weight: 700; color: var(--navy-deep); font-size: 30px; }
+    .dsug { margin: 8px 0 0 150px; width: 520px; border: 2px solid #DADCE0; border-radius: 10px; background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 22px; overflow: hidden; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .dsug div { padding: 8px 16px; }
+    .dsug .k { background: #F8F9FA; color: #5F6368; font-size: 19px; font-weight: 700; }
+    .dsug .a { background: #E8F0FE; }
+    .dsug .l { color: #5F6368; font-size: 15px; font-weight: 700; letter-spacing: .04em; padding-bottom: 2px; }
+    .dchip b.doc { background: #1A73E8; }
+    .dchip { display: inline-flex; align-items: center; gap: 10px; border: 2px solid #DADCE0; border-radius: 99px; padding: 4px 16px 4px 6px; background: #fff; font-size: 22px; }
+    .dchip b { background: #D93025; color: #fff; border-radius: 99px; font-size: 17px; padding: 3px 10px; }
+    .oogrij { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .oog { background: #fff; border: 3px solid var(--navy); border-radius: 14px; padding: 10px 12px; text-align: center; font-size: 24px; line-height: 1.2; }
+    .oog b { display: block; font-size: 30px; color: var(--navy-deep); margin-bottom: 4px; }
+    .oog svg { width: 52px; height: 52px; fill: none; stroke: var(--navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .oog.bcc { border-color: #A0372A; }
+    .oog.bcc svg { stroke: #A0372A; }
+  </style>
+</head>
+<body>
+<div class="hud"><span id="counter"></span> · <kbd>→</kbd> verder · <kbd>F</kbd> volledig scherm · <kbd>N</kbd> notities</div>
+<div class="deck"><div class="stage">
+<!-- 1 · vaste startdia -->
+<section class="slide start">
+  <div class="start-kop">
+    <div>
+      <p class="kicker">Toegepaste Informatica · les 15</p>
+      <h1>E1: de e-mailopdracht</h1>
+    </div>
+    <span class="start-zo">Zo start je</span>
+  </div>
+  <ol class="startroute">
+    <li><div class="sr-beeld"><div class="pc-scherm"><span class="pc-avatar"></span><span class="pc-veld">••••••</span></div><div class="pc-voet"></div></div><span class="sr-tekst">Meld je aan op de computer.</span></li>
+    <li><div class="sr-beeld"><span class="url-balk"><img class="logo" src="assets/logos/classroom.svg" alt="">classroom.google.com</span><span class="url-knop">Inloggen</span></div><span class="sr-tekst">Ga in Chrome naar Classroom. Klik op <span class="knop">Inloggen</span>.</span></li>
+    <li><div class="sr-beeld"><span class="login-veld">…<b>@dalton.gent</b></span><span class="login-veld">••••••••</span></div><span class="sr-tekst">Log in met je schoolaccount.</span></li>
+    <li><div class="sr-beeld"><div class="lesgroep"><span class="lesgroep-kop">… 2027 - Informatica</span></div></div><span class="sr-tekst">Klik op je klas: 3ORLO, 4ORLOa of 4ORLOb.</span></li>
+    <li><div class="sr-beeld"><div class="tabs"><span class="tab-grijs"></span><span class="tab-aan">Schoolwerk</span><span class="tab-grijs"></span></div></div><span class="sr-tekst">Klik op <span class="knop">Schoolwerk</span>.</span></li>
+    <li><div class="sr-beeld"><span class="opdr-rij"><span class="opdr-ic"></span>Communicatie 5 — E1: de e-mailopdracht</span><span class="opdr-link">Instructies bekijken</span></div><span class="sr-tekst">Klik op de opdracht › <span class="knop">Instructies bekijken</span>.</span></li>
+    <li><div class="sr-beeld"><span class="bijl-chip aan"><img class="logo" src="assets/logos/lespagina.webp" alt="">Les 15 · E1: de e-mailopdracht</span></div><span class="sr-tekst">Klik op de lespagina.</span></li>
+    <li class="klaar">Klaar? Laat de lespagina open en kijk naar het bord.</li>
+  </ol>
+  <template class="note">
+    <p><strong>Lesstart (0–1'). De vaste startdia</strong> (sinds 09-10-2026, elke les dezelfde, voor alle klassen). Laat ze op het bord staan terwijl de leerlingen aanmelden.</p>
+    <p>Het <strong>wachtwoord van de computers</strong> staat niet op de dia: de dia's staan openbaar online. Zeg het, of schrijf het op het bord.</p>
+    <p>Ga verder als de meesten de lespagina open hebben.</p>
+  </template>
+</section>
+
+<!-- 2 · lesstart -->
+<section class="slide met-mascotte">
+  <img class="mascotte" src="assets/mascotte/dalton_wijzen_links.webp" alt="" width="240" height="240">
+  <p class="kicker">Lesstart · 2 minuten</p>
+  <h2 style="margin-bottom:14px">Vandaag toon je wat je kan</h2>
+  <ul class="vond">
+    <li><span class="nr">11</span><span>De <strong>zakelijke e-mail</strong>: de zes bouwstenen.</span></li>
+    <li><span class="nr">12</span><span><strong>Aan, Cc, Bcc</strong> en een <strong>bijlage</strong>.</span></li>
+    <li><span class="nr">14</span><span>Een <strong>uitnodiging</strong> in Google Agenda.</span></li>
+  </ul>
+  <p class="klok" style="margin-top:8px;font-size:26px"><strong>Je werkt alleen.</strong> Je mag de lespagina en je vorige werkdocumenten gebruiken.</p>
+  <template class="note">
+    <p><strong>Lesstart (0&ndash;2').</strong> Dia 1 blijft staan terwijl de computers opstarten; ga verder als de meesten de lespagina open hebben. Zeg: <em>"Vandaag toon je wat je in les 11 tot 14 leerde. Je werkt alleen. Je mag de lespagina en je vorige werkdocumenten gebruiken."</em></p>
+    <p>Geen vraag over de inhoud en geen demo: alles is in les 11&ndash;14 voorgedaan. Zeg ook: <em>"Het is een evaluatie: je krijgt er 20 punten voor."</em></p>
+  </template>
+</section>
+
+<!-- 3 · de opdracht -->
+<section class="slide compact">
+  <p class="kicker">Instructie · de opdracht · 2 minuten</p>
+  <h2 style="margin-bottom:14px">Tom moet twee dingen doen</h2>
+  <div class="two" style="grid-template-columns: 1fr 1fr; align-items: start">
+    <div class="panel">
+      <p class="lbl">1 · Een e-mail</p>
+      <p style="font-size:26px">Aan de vijf nieuwe <strong>jobstudenten</strong>, over hun eerste werkdag, met de <strong>onthaalbrochure</strong> als bijlage.</p>
+      <p style="font-size:26px">Sara van de preventiedienst moet weten wat er gestuurd werd. Ze moet niets doen.</p>
+    </div>
+    <div class="panel">
+      <p class="lbl">2 · Een afspraak</p>
+      <p style="font-size:26px">In <strong>Google Agenda</strong>: de infosessie.</p>
+      <p style="font-size:26px">Je nodigt alleen je <strong>leraar</strong> uit.</p>
+    </div>
+  </div>
+  <p class="klok" style="margin-top:12px;font-size:26px"><strong>De notities van Tom staan door elkaar.</strong> Jij kiest wat in de e-mail hoort en wat in de afspraak.</p>
+  <template class="note">
+    <p><strong>De opdracht (2'; 2&ndash;4' van de instructie).</strong> Lees de twee opdrachten voor. De notities staan op de lespagina (stap 1) en in het werkdocument, bewust door elkaar: <em>"Jij kiest wat in de mail hoort en wat in de agenda."</em></p>
+    <p>Het e-mailadres van je schoolmailbox staat <strong>op het bord</strong> en nergens anders. De leerlingen typen het bij <em>Gasten</em>.</p>
+    <p>Geen hulp bij de inhoud. Op <em>"Wat moet in de mail?"</em> antwoord je: <em>"Kijk naar de notities en je nakijklijst."</em></p>
+  </template>
+</section>
+
+<!-- 4 · zo haal je je punten -->
+<section class="slide compact">
+  <p class="kicker">Instructie · de puntenlijst · 2 minuten</p>
+  <h2 style="margin-bottom:12px">Zo haal je je punten <span class="klok" style="font-size:28px">· 20</span></h2>
+  <div class="two" style="grid-template-columns: 1.15fr 0.85fr; align-items: start">
+    <ul class="regel3" style="gap:6px">
+      <li style="grid-template-columns:1fr 60px;padding:6px 16px;font-size:23px !important"><span>De <strong>e-mail</strong>: ontvangers, onderwerp, tekst, bijlage, toon</span><span class="w" style="text-align:right">12</span></li>
+      <li style="grid-template-columns:1fr 60px;padding:6px 16px;font-size:23px !important"><span>De <strong>afspraak</strong>: titel, dag en uur, locatie, gast, beschrijving, verstuurd</span><span class="w" style="text-align:right">6</span></li>
+      <li style="grid-template-columns:1fr 60px;padding:6px 16px;font-size:23px !important"><span><strong>Nakijken</strong>: de nakijklijst, een zin, de schermafbeelding</span><span class="w" style="text-align:right">2</span></li>
+    </ul>
+    <div class="panel navy">
+      <p style="font-size:25px"><strong>Let extra op</strong></p>
+      <p style="font-size:24px">de <strong>ontvangers</strong><br>de <strong>datum en het uur</strong><br>de <strong>bijlage</strong><br>de uitnodiging <strong>versturen</strong></p>
+    </div>
+  </div>
+  <p class="klok" style="margin-top:12px;font-size:24px">De volledige puntenlijst staat op de lespagina, in stap 1. Een tikfout in een e-mailadres telt als fout.</p>
+  <template class="note">
+    <p><strong>Zo haal je je punten (2'; 4&ndash;6').</strong> Toon de drie blokken: 12 + 6 + 2 = 20. Zeg: <em>"De volledige lijst met alle criteria staat op de lespagina, in stap 1. Lees ze vóór je begint."</em> De vier punten rechts zijn de essentiële fouten (§ 22): de ontvangers (de adressen van de jobstudenten mogen niet voor elkaar zichtbaar zijn), een verkeerde datum of een verkeerd uur, geen bijlage, en de afspraak opgeslagen met <em>Niet sturen</em>. Noem ze niet voor, laat de leerlingen de lijst lezen.</p>
+    <p>Aftrek (<code>_afspraken/evaluatie-en-privacy.md</code>): te laat = &minus;5; het codewoord van de zelftest leeg of fout = &minus;2; niets ingeleverd = 0 (inhalen mag).</p>
+  </template>
+</section>
+
+<!-- 5 · deadline en zo werk je verder -->
+<section class="slide compact met-mascotte">
+  <img class="mascotte" src="assets/mascotte/dalton_laptop.webp" alt="" width="240" height="240">
+  <p class="kicker">Zelfstandig werk · <span class="eindtijd">42 minuten</span></p>
+  <h2>Zo werk je verder</h2>
+  <div class="two" style="grid-template-columns: 1.6fr 1fr">
+    <div>
+      <ol class="steps1 kloklijst" data-instructie="8" data-lesmomenten="2026-11-18/9.15/10.05/3ORLO/2;2026-11-18/10.25/11.15/4ORLOb/3;2026-11-19/13.45/14.35/4ORLOa/7" data-beltijden="8.25-9.15 9.15-10.05 10.25-11.15 11.15-12.05 12.05-12.55 13.45-14.35 14.35-15.25 15.25-16.15 16.15-17.05">
+        <li data-min="4">Klaarzetten <span class="klok tijd">4'</span></li>
+        <li data-min="6">De ontvangers en de bijlage <span class="klok tijd">6'</span></li>
+        <li data-min="12">De tekst van de mail <span class="klok tijd">12'</span></li>
+        <li data-min="12">De infosessie in de agenda <span class="klok tijd">12'</span></li>
+        <li data-min="5">Nakijken <span class="klok tijd">5'</span></li>
+        <li data-min="3">Inleveren <span class="klok tijd">3'</span></li>
+      </ol>
+    </div>
+    <div class="panel navy">
+      <p style="font-size:25px"><strong>Vast?</strong></p>
+      <p style="font-size:26px">1. <em>Toon stapjes</em><br>2. De geheugensteun<br>3. Ik (alleen de software)</p>
+      <p style="margin-top:14px;font-size:22px">Vink af in de <strong>checklist</strong>.</p>
+    </div>
+  </div>
+  <p class="klok" style="margin-top:12px;font-size:25px">
+    <strong>Deadline: het einde van dit lesuur.</strong> Eerst de nakijklijst, dan <strong>Inleveren</strong>. Het adres van je leraar staat op het bord.<br>
+    De opdracht staat in <span class="met-logo"><img class="logo" src="assets/logos/classroom.svg" alt="">Google Classroom</span>: <em>Communicatie 5 &mdash; E1: de e-mailopdracht</em>. Je levert alleen je <strong>werkdocument</strong> in.<br>Adres: jonasdaltongent.github.io/E1-Email-NovaDepot/<!-- PAS AAN --></p>
+  <template class="note">
+    <p><strong>Deadline en inleveren (6&ndash;8').</strong> Laat deze dia staan zolang ze werken: <strong>het einde van het lesuur is de deadline</strong> (3ORLO 10.05 uur, 4ORLOb 11.15 uur, 4ORLOa 14.35 uur). Zet het adres van je schoolmailbox op het <strong>bord</strong>. Zeg: <em>"Eerst de nakijklijst, dan Inleveren. Wie niet klaar is, levert toch in."</em></p>
+    <p><strong>De kloktijden</strong> komen uit de planning (<code>_tools/zet_lesmomenten.py</code>): de tijd verdeelt zich over de stappen na de 8 minuten instructie. Te vroeg getoond? Druk op <strong>T</strong>.</p>
+    <p><strong>Rondgang:</strong> alleen de software (<em>"Waar vind je Meer opties?"</em>, <em>"Hoe maak je een chip?"</em>, <em>"Welke toetsen voor een schermafbeelding?"</em>). Eerste rondgang: heeft iedereen het <strong>eigen</strong> werkdocument open? Daarna: staat de afspraak op de juiste dag en zit er een schermafbeelding in? Op inhoud antwoord je: <em>"Kijk naar de notities en je nakijklijst."</em></p>
+    <p><strong>Minimumroute:</strong> eerst de e-mail (deel 1, 12 punten), dan de afspraak (6 punten), dan inleveren. Wie na 30 minuten nog bij de mail zit, begint toch aan de afspraak.</p>
+    <p>Wie vraagt hoe hij inlevert: kijk eerst onder de vragen van de laatste stap. Laatste minuut: <em>"Vertrek je? Log uit, of druk op Windows + L."</em></p>
+    <p><strong>Vergeet niet</strong> het adres op deze dia aan te passen als de repository anders heet.</p>
+  </template>
+</section>
+
+</div></div>
+<div class="notes" id="notes"></div>
+<script src="js/slides.js"></script>
+</body>
+</html>

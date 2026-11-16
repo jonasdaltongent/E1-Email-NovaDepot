@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lespagina · Les 15 · E1: de e-mailopdracht · NovaDepot</title>
+  <link rel="icon" href="assets/logos/lespagina-icon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-storage="novadepot_e1_v1_" data-modus-start="kort" data-laatste-stap="6" data-ai-hulp="uit">
+
+<!-- Pictogrammen: eenvoudige lijntekeningen, eigen werk. Gebruik: een svg met class "ic" en daarin use met href naar het symbool. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4 2.5 4H5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z"/><path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 10"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4.5 6h.01M4.5 12h.01M4.5 18h.01" stroke-width="3"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5l9.5 17h-19z"/><path d="M12 10v4.5M12 17.5h.01"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.5c-.6.3-1 .8-1 1.5v.4M12 17h.01"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v10a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M4 14v6h16v-6"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9l-5.2 2.8 1-5.9-4.3-4.1 5.9-.8z"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="M18.5 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V6a1.5 1.5 0 0 1 3 0v5"/><path d="M11 10.5V4.5a1.5 1.5 0 0 1 3 0v6"/><path d="M14 10.5V6a1.5 1.5 0 0 1 3 0v7.5"/><path d="M8 11.5l-1.5-1.5a1.6 1.6 0 0 0-2.3 2.3l3.6 4.2A6.5 6.5 0 0 0 17 13.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.2a5 5 0 0 1 5 5"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+  <symbol id="i-hash" viewBox="0 0 24 24"><path d="M9.5 4L7.5 20M16.5 4l-2 16M4 9h16M3.5 15h16"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M4 7h9M4 12h6M4 17h3"/><path d="M17 5v14M14 16l3 3 3-3"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6h.01"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></symbol>
+</svg>
+
+<div class="teacher-banner">Leraarweergave: alle blokken staan open, en er wordt niets onthouden. Leerlingen zien dit niet.</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html" title="Naar het begin van de les">
+      <img src="assets/novadepot-logo.svg" alt="NovaDepot">
+      <span class="brand-lesson">Les 15 · E1: de e-mailopdracht</span>
+    </a>
+    <span class="topbar-spacer"></span>
+    <img class="dalton-mark" src="assets/dalton-gent-logo.png" alt="GO! Dalton Gent">
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ LINKS: de route ============ -->
+  <nav class="route" aria-label="Stappenplan">
+    <p class="route-title">Stappenplan</p>
+    <button class="nav-btn" type="button" data-step="start"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-flag"/></svg></span><span class="nav-lbl">Start</span></button>
+    <button class="nav-btn" type="button" data-step="theorie"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><span class="nav-lbl">Theoriekaart</span></button>
+
+    <p class="route-group">De opdracht</p>
+    <button class="nav-btn" type="button" data-step="1"><span class="nav-num"><span class="nav-n">1</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Klaarzetten</span></button>
+
+    <p class="route-group">De e-mail</p>
+    <button class="nav-btn" type="button" data-step="2"><span class="nav-num"><span class="nav-n">2</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">De ontvangers en de bijlage</span></button>
+    <button class="nav-btn" type="button" data-step="3"><span class="nav-num"><span class="nav-n">3</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">De tekst van de mail</span></button>
+
+    <p class="route-group">De afspraak</p>
+    <button class="nav-btn" type="button" data-step="4"><span class="nav-num"><span class="nav-n">4</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">De infosessie in de agenda</span></button>
+
+    <p class="route-group">Afwerken</p>
+    <button class="nav-btn" type="button" data-step="5"><span class="nav-num"><span class="nav-n">5</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Nakijken</span></button>
+    <button class="nav-btn" type="button" data-step="6"><span class="nav-num"><span class="nav-n">6</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Inleveren</span></button>
+  </nav>
+
+  <!-- ============ MIDDEN: één stap tegelijk ============ -->
+  <main id="main">
+
+    <!-- ===== START ===== -->
+    <section class="pane" id="pane-start" aria-labelledby="h-start">
+      <article class="card">
+        <header class="card-head met-mascotte">
+          <div>
+            <div class="tags"><span class="tag tag-where">Toegepaste Informatica · les 15</span></div>
+            <h1 id="h-start">E1: de e-mailopdracht</h1>
+          </div>
+          <img class="mascotte-kop" src="assets/mascotte/dalton_welkom.webp" alt="" width="120" height="120">
+        </header>
+        <div class="card-body">
+          <p class="intro">Tom van NovaDepot mailt de nieuwe jobstudenten en zet hun infosessie in de agenda. Jij doet het voor hem, alleen: dit is een evaluatie van 20 punten.</p>
+
+          <h2 class="sec">Wat heb je nodig?</h2>
+          <ol class="nodig vier">
+            <li class="nodig-item">
+              <div class="mock mock-opdracht" aria-hidden="true">
+                <div class="mo-midden">
+                  <div class="mo-titel"><img class="logo" src="assets/logos/classroom.svg" alt="">Communicatie 5 — E1: de e-mailopdracht</div>
+                  <div class="mo-chip"><img class="logo" src="assets/logos/lespagina.webp" alt=""><span>Lespagina · Les 15</span></div>
+                </div>
+                <div class="mo-werk">
+                  <div class="mo-werk-kop">Jouw werk</div>
+                  <div class="mo-chip"><img class="logo" src="assets/logos/docs.svg" alt=""><span>CO5_E1-e-mailopdracht</span></div>
+                  <div class="mo-knop">Inleveren</div>
+                </div>
+              </div>
+              <p class="nodig-naam"><img class="logo" src="assets/logos/classroom.svg" alt="">De opdracht in Google Classroom</p>
+              <p class="nodig-uitleg">Hier begin je. Hier lever je in.</p>
+            </li>
+            <li class="nodig-item">
+              <div class="mock mock-lespagina" aria-hidden="true">
+                <div class="ml-balk"></div>
+                <div class="ml-midden">
+                  <div class="ml-route"><span></span><span></span><span></span><span></span></div>
+                  <div class="ml-stap"><span class="ml-tag">Stap 1</span><span class="ml-lijn"></span><span class="ml-lijn kort"></span><span class="ml-lijn"></span></div>
+                </div>
+                <div class="ml-hier">Je bent hier</div>
+              </div>
+              <p class="nodig-naam"><img class="logo" src="assets/logos/lespagina.webp" alt="">Deze lespagina</p>
+              <p class="nodig-uitleg">Hier lees je de opdracht en de notities.</p>
+            </li>
+            <li class="nodig-item inleveren">
+              <div class="mock mock-werkdocument" aria-hidden="true"><div class="mw-balk"><img class="logo" src="assets/logos/docs.svg" alt="">CO5_E1-e-mailopdracht</div><div class="mw-blad"><div class="mw-venster"><div class="mw-kop">Nieuw bericht</div><div class="mw-veld">Aan</div><div class="mw-veld">Cc</div><div class="mw-veld">Bcc</div><div class="mw-veld">Onderwerp</div><div class="mw-veld">Bijlage</div><div class="mw-tekst"><span></span><span class="kort"></span></div></div></div></div>
+              <p class="nodig-naam"><img class="logo" src="assets/logos/docs.svg" alt="">Je werkdocument CO5</p>
+              <p class="nodig-uitleg">Hier schrijf je de e-mail. Dit lever je in.</p>
+            </li>
+            <li class="nodig-item">
+              <div class="mock mock-agendab" aria-hidden="true"><div class="md-balk"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>&nbsp;Google Agenda</div><div class="md-rij"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg><span class="md-bal"></span></div><div class="md-rij"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg><span class="md-bal kort"></span></div></div>
+              <p class="nodig-naam"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>Google Agenda</p>
+              <p class="nodig-uitleg">Hier maak je de afspraak.</p>
+            </li>
+          </ol>
+
+          <h2 class="sec">Dit maak je vandaag</h2>
+          <p class="nodig-noot" style="margin-top:0">Een e-mail met bijlage, in je werkdocument. En een afspraak in Google Agenda.</p>
+          <div class="vandaag"><div class="mailbouw" role="img" aria-label="Tekening van de e-mail die je schrijft: een venster Nieuw bericht met Aan, Cc, Bcc, Onderwerp en Bijlage (een chip met een pdf), en zes stukken met een naam en balkjes: aanspreking, inleiding, de boodschap, slot, slotgroet, handtekening."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Cc</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-chip"><b>PDF</b><i></i></span></div><div class="mb-rij"><span class="mb-naam"><b>1</b>Aanspreking</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>2</b>Inleiding</span><span class="mb-balk"><i></i><i class="mid"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>3</b>De boodschap</span><span class="mb-balk"><i></i><i class="mid"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>4</b>Slot</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>5</b>Slotgroet</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>6</b>Handtekening</span><span class="mb-balk"><i></i><i class="mid"></i></span></div></div><div class="agenda" role="img" aria-label="Tekening van de afspraak die je maakt in Google Agenda: een titel, de dag en het uur, een locatie, een gast en een beschrijving, allemaal als grijze balkjes."><div class="ag-kop">Afspraak · Meer opties</div><div class="ag-rij"><span>Titel toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Datum en uur: van … tot …</span><i class=""></i></div><div class="ag-rij"><span>Gasten toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Locatie toevoegen</span><i class="kort"></i></div><div class="ag-rij groot"><span>Beschrijving toevoegen</span><span class="ag-balk"><i></i><i></i><i class="kort"></i></span></div></div></div>
+
+          <h2 class="sec">Na deze les kan je</h2>
+          <ul class="doelen">
+            <li>een zakelijke e-mail met bijlage schrijven;</li>
+            <li>ontvangers juist kiezen: Aan, Cc of Bcc;</li>
+            <li>een uitnodiging in Google Agenda versturen.</li>
+          </ul>
+
+          <h2 class="sec">Vast? Probeer het in deze volgorde</h2>
+          <ol class="vast">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg><span>Klik in de stap op <em>Toon stapjes</em></span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><span>De geheugensteun in de stap</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-hand"/></svg><span>Je leraar (alleen voor de software)</span></li>
+          </ol>
+
+          <p class="start-cta"><button class="btn btn-primary" type="button" data-goto="1">Start met stap 1 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== THEORIEKAART ===== -->
+    <section class="pane" id="pane-theorie" aria-labelledby="h-theorie">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-where">Spiekbriefje</span></div>
+          <h2 id="h-theorie">Theoriekaart</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Alles op één plek. Kom hier terug als je iets niet meer weet.</p>
+
+          <div class="t-grid">
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg>Zo werkt elke les</h3>
+              <ul>
+                <li>Je start in Classroom, bij de opdracht van vandaag.</li>
+                <li>In de opdracht staan de lespagina en je werkdocument.</li>
+                <li>Klaar? Doe de zelftest in de laatste stap. Dan zie je hoe je inlevert.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Aan, Cc of Bcc?</h3>
+              <ul>
+                <li><strong>Aan</strong>: moet iets doen.</li>
+                <li><strong>Cc</strong>: moet het weten, doet niets.</li>
+                <li><strong>Bcc</strong>: niemand ziet de andere adressen.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-pen"/></svg>De zes bouwstenen</h3>
+              <ul>
+                <li><strong>Aanspreking</strong> · <strong>Inleiding</strong> · <strong>De boodschap</strong></li>
+                <li><strong>Slot</strong> · <strong>Slotgroet</strong> · <strong>Handtekening</strong></li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Je pdf toevoegen</h3>
+              <ul>
+                <li>Typ <strong>@</strong> in het vak en kies je pdf.</li>
+                <li>Zeg in je tekst dat ze erbij zit.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>Een uitnodiging</h3>
+              <ul>
+                <li>De plaats, de dag en het uur.</li>
+                <li>Wie leidt, en wat het doel is.</li>
+                <li>De punten, en de vraag om te laten weten als je niet kan.</li>
+              </ul>
+            </section>
+            <section class="t-card wide">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Woorden</h3>
+              <table class="t-rows">
+                <tr><th>bijlage</th><td>een bestand dat je met je mail meestuurt</td></tr>
+                <tr><th>chip</th><td>een bestand als blokje in je tekst, met <strong>@</strong></td></tr>
+                <tr><th>gast</th><td>iemand die je uitnodigt voor een afspraak</td></tr>
+                <tr><th>persoonsgegeven</th><td>een gegeven dat bij een persoon hoort, zoals een e-mailadres</td></tr>
+              </table>
+            </section>
+            <section class="t-card wide warn">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg>Veelgemaakte fouten</h3>
+              <ul>
+                <li>Zie je een jobstudent in Aan of Cc? Zet het adres in Bcc.</li>
+                <li>Is je pdf niet toegevoegd? Typ <strong>@</strong> en kies je pdf, of typ de naam.</li>
+                <li>Klikte je op Niet sturen? Zeg het meteen aan je leraar.</li>
+                <li>Staan <em>je</em> en <em>u</em> door elkaar? Kies één vorm.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== STAP 1 ===== -->
+    <section class="pane" id="pane-1" aria-labelledby="h-1">
+      <article class="card">
+<header class="card-head">
+<div class="tags"><span class="tag tag-step">Stap 1</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument</span></div>
+<h2 id="h-1">Klaarzetten</h2>
+</header>
+<div class="card-body">
+<p class="intro">Je opent je werkdocument en leest wat Tom nodig heeft.</p>
+<div class="todo-box">
+<div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+<ol class="doe">
+<li><details class="stapjes"><summary><span class="doe-tekst">Open je werkdocument <strong>CO5_E1-e-mailopdracht</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Kijk in je opdracht in <strong class="met-logo"><img class="logo" src="assets/logos/classroom.svg" alt="">Google Classroom</strong> rechts, bij <strong>Jouw werk</strong>.</p><div class="mock mock-opdracht mini-mock" role="img" aria-label="Tekening van de opdracht in Google Classroom. Rechts het vak Jouw werk, in een rood kader."><div class="mo-midden"><div class="mo-titel"><img class="logo" src="assets/logos/classroom.svg" alt="">Communicatie 5 — E1: de e-mailopdracht</div><div class="mo-chip"><img class="logo" src="assets/logos/lespagina.webp" alt=""><span>Lespagina · Les 15</span></div></div><div class="mo-werk wijs"><div class="mo-werk-kop">Jouw werk</div><div class="mo-chip"><img class="logo" src="assets/logos/docs.svg" alt=""><span>CO5_E1-e-mailopdracht</span></div><div class="mo-knop">Inleveren</div></div></div></li>
+<li><p>Klik op <strong>CO5_E1-e-mailopdracht</strong>. Jouw naam staat in de titel.</p><div class="mock mock-opdracht mini-mock" role="img" aria-label="Tekening van de opdracht. Bij Jouw werk staat het werkdocument CO5 in een rood kader."><div class="mo-midden"><div class="mo-titel"><img class="logo" src="assets/logos/classroom.svg" alt="">Communicatie 5 — E1: de e-mailopdracht</div><div class="mo-chip"><img class="logo" src="assets/logos/lespagina.webp" alt=""><span>Lespagina · Les 15</span></div></div><div class="mo-werk"><div class="mo-werk-kop">Jouw werk</div><div class="mo-chip wijs"><img class="logo" src="assets/logos/docs.svg" alt=""><span>CO5_E1-e-mailopdracht</span></div><div class="mo-knop">Inleveren</div></div></div></li>
+</ol>
+</details></li>
+<li><span class="doe-tekst">Typ bij elke notitie in je werkdocument: <strong>mail</strong>, <strong>agenda</strong> of <strong>allebei</strong>.</span><span class="sub">Typ in het lichtblauwe vak. De notities staan ook hieronder.</span></li>
+<li><span class="doe-tekst">Lees hieronder waarvoor je punten krijgt.</span></li>
+</ol>
+</div>
+<div class="info" role="group" aria-labelledby="info-notities">
+<div class="info-kop"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span class="info-soort">Info</span><h3 id="info-notities">De opdracht en de notities van Tom</h3><span class="info-bij">bij deel 1 en 2</span></div>
+<div class="info-body">
+<ul>
+<li><strong>E-mail</strong>: stuur de jobstudenten een e-mail over hun eerste werkdag, met de onthaalbrochure als bijlage. Sara Claes van de preventiedienst moet weten wat er gestuurd werd. Ze moet niets doen.</li>
+<li><strong>Afspraak</strong>: zet de infosessie in de agenda. Nodig in de les alleen je leraar uit.</li>
+</ul>
+<table class="info-tabel">
+<tr><th>Notities van Tom</th></tr>
+<tr><td>eerste werkdag: maandag 21 december 2026, om 7.30 uur aan het onthaal</td></tr>
+<tr><td>Sara Claes, preventiedienst — sara.claes@novadepot.example</td></tr>
+<tr><td>infosessie, punten: welkom en rondleiding · veiligheid in het magazijn (Sara) · de planning van de week · vragen</td></tr>
+<tr><td>bijlage: de onthaalbrochure (de pdf van les 04)</td></tr>
+<tr><td><strong>nieuw van Sara:</strong> veiligheidsschoenen meebrengen; wie er geen heeft, antwoordt op de mail vóór vrijdag 11 december: dan krijgt hij een paar van NovaDepot</td></tr>
+<tr><td>doel infosessie: de jobstudenten welkom heten en uitleggen hoe de week verloopt</td></tr>
+<tr><td>wie niet kan komen naar de infosessie: antwoordt met Nee</td></tr>
+<tr><td>identiteitskaart meebrengen</td></tr>
+<tr><td>infosessie: 8.00 tot 9.00 uur, in de kantine — Lotte Maes leidt ze</td></tr>
+<tr><td>Tom Peeters, magazijnverantwoordelijke, NovaDepot, toestel 214 — tom.peeters@novadepot.example</td></tr>
+<tr><td>de jobstudenten kennen elkaar niet; hun adressen zijn privé:<br>lina.haddad@mail.example<br>emre.yilmaz@mail.example<br>noor.verbeke@mail.example<br>kobe.desmet@mail.example<br>ayla.janssens@mail.example</td></tr>
+</table>
+</div>
+</div>
+<div class="info" role="group" aria-labelledby="info-punten">
+<div class="info-kop"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span class="info-soort">Info</span><h3 id="info-punten">Zo krijg je je punten</h3><span class="info-bij">20 punten</span></div>
+<div class="info-body">
+<table class="info-tabel">
+<tr><td>E-mail: de ontvangers in Aan, Cc en Bcc</td><th>3</th></tr>
+<tr><td>E-mail: het onderwerp</td><th>1</th></tr>
+<tr><td>E-mail: aanspreking en inleiding</td><th>1</th></tr>
+<tr><td>E-mail: de feiten van de eerste werkdag</td><th>3</th></tr>
+<tr><td>E-mail: het verzoek</td><th>1</th></tr>
+<tr><td>E-mail: slotgroet en handtekening</td><th>1</th></tr>
+<tr><td>E-mail: de bijlage</td><th>1</th></tr>
+<tr><td>E-mail: de toon</td><th>1</th></tr>
+<tr><td>Afspraak: titel, dag en uur</td><th>2</th></tr>
+<tr><td>Afspraak: locatie en gast</td><th>1</th></tr>
+<tr><td>Afspraak: de beschrijving</td><th>2</th></tr>
+<tr><td>Afspraak: verstuurd</td><th>1</th></tr>
+<tr><td>Nakijken: nakijklijst, zin en schermafbeelding</td><th>2</th></tr>
+</table>
+</div>
+</div>
+<div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Staat jouw naam niet in de titel?</strong> Dan opende je niet je eigen kopie. Klik in je opdracht rechts, bij <em>Jouw werk</em>.</p></div>
+</div>
+<footer class="card-nav">
+  <button class="btn" type="button" data-goto="start"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Start</button>
+  <button class="btn btn-primary" type="button" data-goto="2">Stap 2 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 2 ===== -->
+    <section class="pane" id="pane-2" aria-labelledby="h-2">
+      <article class="card">
+<header class="card-head">
+<div class="tags"><span class="tag tag-step">Stap 2</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument, deel 1: boven in het venster</span></div>
+<h2 id="h-2">De ontvangers en de bijlage</h2>
+</header>
+<div class="card-body">
+<p class="intro">De mail gaat naar de juiste mensen, en de brochure gaat mee.</p>
+<div class="todo-box">
+<div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+<ol class="doe">
+<li><span class="doe-tekst">Vul in <strong>deel 1</strong> de vakken <strong>Aan</strong>, <strong>Cc</strong> en <strong>Bcc</strong> in, met de adressen uit de notities, elk adres in het juiste veld.</span><span class="sub">Kopieer de adressen met Ctrl + C en Ctrl + V: één letter fout en die mail komt niet aan. Meer dan één adres? Zet een komma ertussen.</span></li>
+<li><span class="doe-tekst">Typ het <strong>onderwerp</strong>: waarover de mail gaat, met de datum.</span></li>
+<li><details class="stapjes"><summary><span class="doe-tekst">Voeg bij <strong>Bijlage</strong> de onthaalbrochure toe: je pdf uit les 04.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik in het vak naast <strong>Bijlage</strong>. Typ <strong>@</strong>.<span class="sub">Er verschijnt een lijst met suggesties.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 1. Het vak naast Bijlage staat in een rood kader, met daarin het teken @."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak "></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak "></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak "></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak typ wijs">@</span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak "></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak "></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+<li><p>Typ er een stuk van de naam van je pdf achter: <strong>TV3</strong>.<span class="sub">Die letters staan in de naam van je pdf uit les 04.</span></p><div class="sugg" role="img" aria-label="Tekening van de lijst met suggesties na @TV3. Onder Bestanden staat je pdf met een rood pdf-icoon op een blauwe regel, en daaronder het Google-document met dezelfde naam, met een blauw icoon. Onder Plaatsen staan plaatsen op de kaart."><div class="kop">@TV3</div><div class="lbl">Bestanden</div><div class="aan"><b>PDF</b>… - TV3_Documentopmaak.pdf</div><div><b class="doc">DOC</b>… - TV3_Documentopmaak</div><div class="lbl">Plaatsen</div><div><b class="plaats">📍</b>TV3 · een plaats op de kaart</div></div></li>
+<li><p>Klik in de lijst op je pdf: de regel met het <strong>rode pdf-icoon</strong>, onder <em>Bestanden</em>.<span class="sub">Niet het blauwe document met dezelfde naam, en geen plaats. Er komt een chip in het vak.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 1. In het vak naast Bijlage staat een chip met de naam van een pdf, in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak "></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak "></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak "></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak chip wijs"><span class="mb-chip"><b>PDF</b>… - TV3_Documentopmaak.pdf</span></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak "></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak "></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+</ol>
+</details><span class="sub">Vind je je pdf niet? Typ dan de naam van het bestand.</span></li>
+</ol>
+</div>
+<div class="info" role="group" aria-labelledby="info-abc">
+<div class="info-kop"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span class="info-soort">Info</span><h3 id="info-abc">Geheugensteun: Aan, Cc of Bcc?</h3><span class="info-bij">bij deel 1</span></div>
+<div class="info-body">
+<ul>
+<li><strong>Aan</strong>: wie de hele mail moet lezen en iets moet doen.</li>
+<li><strong>Cc</strong>: wie het moet weten, maar niets moet doen. Iedereen ziet dit adres.</li>
+<li><strong>Bcc</strong>: een groep die elkaars adres niet mag of hoeft te zien. Niemand ziet de andere adressen in Bcc.</li>
+<li>Staat iedereen in Bcc? Dan mag <strong>Aan leeg</strong> blijven.</li>
+<li>Een e-mailadres is een <strong>persoonsgegeven</strong>.</li>
+</ul>
+</div>
+</div>
+<div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Twijfel je tussen Aan en Cc?</strong> Vraag je af: moet die persoon iets doen?</p></div>
+</div>
+<footer class="card-nav">
+  <button class="btn" type="button" data-goto="1"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 1</button>
+  <button class="btn btn-primary" type="button" data-goto="3">Stap 3 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 3 ===== -->
+    <section class="pane" id="pane-3" aria-labelledby="h-3">
+      <article class="card">
+<header class="card-head">
+<div class="tags"><span class="tag tag-step">Stap 3</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument, deel 1: de zes vakken</span></div>
+<h2 id="h-3">De tekst van de mail</h2>
+</header>
+<div class="card-body">
+<p class="intro">Een zakelijke mail met alle feiten die de jobstudenten nodig hebben.</p>
+<div class="todo-box">
+<div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+<ol class="doe">
+<li><span class="doe-tekst">Schrijf in <strong>deel 1</strong> de <strong>aanspreking</strong> en de <strong>inleiding</strong>: wie Tom is en waarom hij mailt.</span><span class="sub">Typ in de lichtblauwe vakken. Je schrijft voor Tom, niet met je eigen naam.</span></li>
+<li><span class="doe-tekst">Schrijf de <strong>boodschap</strong>: wat de jobstudenten moeten weten en meebrengen, en wanneer en waar ze verwacht worden.</span></li>
+<li><span class="doe-tekst">Schrijf het <strong>slot</strong>: wat moet wie doen, tegen wanneer? Zeg ook dat er een bijlage is.</span></li>
+<li><span class="doe-tekst">Schrijf de <strong>slotgroet</strong> en de <strong>handtekening</strong> van Tom.</span></li>
+</ol>
+</div>
+<div class="info" role="group" aria-labelledby="info-bouwstenen">
+<div class="info-kop"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span class="info-soort">Info</span><h3 id="info-bouwstenen">Geheugensteun: de zes bouwstenen en de toon</h3><span class="info-bij">bij deel 1</span></div>
+<div class="info-body">
+<ul>
+<li><strong>Aanspreking</strong>: beleefd, met een komma erna.</li>
+<li><strong>Inleiding</strong>: wie je bent en waarom je schrijft.</li>
+<li><strong>De boodschap</strong>: het belangrijkste eerst, kort, in alinea's.</li>
+<li><strong>Slot</strong>: wat je van de lezer verwacht en tegen wanneer.</li>
+<li><strong>Slotgroet</strong>: zonder afkorting.</li>
+<li><strong>Handtekening</strong>: naam, functie, bedrijf en hoe ze je bereiken.</li>
+<li><strong>Toon</strong>: overal <em>je</em> of overal <em>u</em>. Geen emoji, geen afkortingen, geen hoofdletterwoorden.</li>
+</ul>
+</div>
+</div>
+<div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Weet je niet wat in de mail hoort?</strong> Kijk naar je notities in deel 1: wat moeten de jobstudenten weten of doen?</p></div>
+</div>
+<footer class="card-nav">
+  <button class="btn" type="button" data-goto="2"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 2</button>
+  <button class="btn btn-primary" type="button" data-goto="4">Stap 4 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 4 ===== -->
+    <section class="pane" id="pane-4" aria-labelledby="h-4">
+      <article class="card">
+<header class="card-head">
+<div class="tags"><span class="tag tag-step">Stap 4</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Google Agenda · Werkdocument, deel 2</span></div>
+<h2 id="h-4">De infosessie in de agenda</h2>
+</header>
+<div class="card-body">
+<p class="intro">De infosessie staat in de agenda, en je leraar is uitgenodigd.</p>
+<div class="todo-box">
+<div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+<ol class="doe">
+<li><span class="doe-tekst">Open <strong>Google Agenda</strong> en maak een afspraak: <span class="ui">Maken</span> › <span class="ui">Afspraak</span> › <span class="ui">Meer opties</span>.</span><span class="sub">Zoals in les 14.</span></li>
+<li><details class="stapjes"><summary><span class="doe-tekst">Vul de afspraak voor de infosessie in: <strong>titel</strong>, <strong>dag</strong>, <strong>uur</strong>, <strong>locatie</strong> en <strong>beschrijving</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik bovenaan op <span class="ui">Titel toevoegen</span> en typ de titel.</p><div class="agenda" role="img" aria-label="Tekening van de afspraak in Meer opties. De regel Titel toevoegen staat in een rood kader."><div class="ag-kop">Afspraak · Meer opties</div><div class="ag-rij wijs"><span>Titel toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Datum en uur: van … tot …</span><i class=""></i></div><div class="ag-rij"><span>Gasten toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Locatie toevoegen</span><i class="kort"></i></div><div class="ag-rij groot"><span>Beschrijving toevoegen</span><span class="ag-balk"><i></i><i></i><i class="kort"></i></span></div></div></li>
+<li><p>Klik op de datum en op het uur. Stel bij <strong>tot</strong> het einde in.</p><div class="agenda" role="img" aria-label="Tekening van de afspraak in Meer opties. De regel met de datum en het uur staat in een rood kader."><div class="ag-kop">Afspraak · Meer opties</div><div class="ag-rij"><span>Titel toevoegen</span><i class="kort"></i></div><div class="ag-rij wijs"><span>Datum en uur: van … tot …</span><i class=""></i></div><div class="ag-rij"><span>Gasten toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Locatie toevoegen</span><i class="kort"></i></div><div class="ag-rij groot"><span>Beschrijving toevoegen</span><span class="ag-balk"><i></i><i></i><i class="kort"></i></span></div></div></li>
+<li><p>Klik op <span class="ui">Locatie toevoegen</span> en typ de plaats.</p><div class="agenda" role="img" aria-label="Tekening van de afspraak in Meer opties. De regel Locatie toevoegen staat in een rood kader."><div class="ag-kop">Afspraak · Meer opties</div><div class="ag-rij"><span>Titel toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Datum en uur: van … tot …</span><i class=""></i></div><div class="ag-rij"><span>Gasten toevoegen</span><i class="kort"></i></div><div class="ag-rij wijs"><span>Locatie toevoegen</span><i class="kort"></i></div><div class="ag-rij groot"><span>Beschrijving toevoegen</span><span class="ag-balk"><i></i><i></i><i class="kort"></i></span></div></div></li>
+<li><p>Klik op <span class="ui">Beschrijving toevoegen</span> en typ de beschrijving.</p><div class="agenda" role="img" aria-label="Tekening van de afspraak in Meer opties. De regel Beschrijving toevoegen staat in een rood kader."><div class="ag-kop">Afspraak · Meer opties</div><div class="ag-rij"><span>Titel toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Datum en uur: van … tot …</span><i class=""></i></div><div class="ag-rij"><span>Gasten toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Locatie toevoegen</span><i class="kort"></i></div><div class="ag-rij groot wijs"><span>Beschrijving toevoegen</span><span class="ag-balk"><i></i><i></i><i class="kort"></i></span></div></div></li>
+</ol>
+</details></li>
+<li><details class="stapjes"><summary><span class="doe-tekst">Nodig <strong>je leraar</strong> uit: typ zijn e-mailadres (op het bord) bij <span class="ui">Gasten toevoegen</span>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik rechts, bij het tabblad <strong>Gasten</strong>, op <span class="ui">Gasten toevoegen</span>.</p><div class="agenda" role="img" aria-label="Tekening van de afspraak in Meer opties. De regel Gasten toevoegen staat in een rood kader."><div class="ag-kop">Afspraak · Meer opties</div><div class="ag-rij"><span>Titel toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Datum en uur: van … tot …</span><i class=""></i></div><div class="ag-rij wijs"><span>Gasten toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Locatie toevoegen</span><i class="kort"></i></div><div class="ag-rij groot"><span>Beschrijving toevoegen</span><span class="ag-balk"><i></i><i></i><i class="kort"></i></span></div></div></li>
+<li><p>Typ het e-mailadres van je leraar. Dat staat op het bord.<span class="sub">Klik op het adres in de lijst, of druk op Enter.</span></p></li>
+</ol>
+</details><span class="sub">Nodig niemand anders uit. De adressen uit de notities horen niet in een echte afspraak.</span></li>
+<li><details class="stapjes"><summary><span class="doe-tekst">Maak een <strong>schermafbeelding</strong> van je afspraak, vóór je ze opslaat, en plak ze in het kader in <strong>deel 2</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Druk op <span class="key">Windows</span> + <span class="key">Shift</span> + <span class="key">S</span> en trek een kader om je afspraak.<span class="sub">Het knipsel staat nu op het klembord.</span></p></li>
+<li><p>Klik in het vak <em>Schermafbeelding van je afspraak</em> in je werkdocument en druk op <span class="key">Ctrl</span> + <span class="key">V</span>.</p></li>
+</ol>
+</details></li>
+<li><details class="stapjes"><summary><span class="doe-tekst"><strong>Sla de afspraak op</strong> en verstuur de uitnodiging naar je leraar.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik bovenaan op <span class="ui">Opslaan</span>.</p></li>
+<li><p>Er verschijnt een venster. Kies de knop die de uitnodiging naar je leraar stuurt.</p><div class="teken-ui kolom menu" role="img" aria-label="Tekening van het venster: Wil je uitnodigingsmails sturen naar Google Agenda-gasten? Eronder drie knoppen: Terug naar bewerken, Niet sturen en Sturen."><div class="t-kop">Wil je uitnodigingsmails sturen naar Google Agenda-gasten?</div><div class="t-rij"><span class="t-knop tekst">Terug naar bewerken</span><span class="t-knop tekst">Niet sturen</span><span class="t-knop tekst">Sturen</span></div></div></li>
+</ol>
+</details></li>
+<li><span class="doe-tekst">Typ in <strong>deel 2</strong> wat je invulde, en op welke knop je klikte na <em>Opslaan</em>.</span><span class="sub">Eén vak per veld. Schrijf bij Gasten geen e-mailadres.</span></li>
+</ol>
+</div>
+<div class="info" role="group" aria-labelledby="info-uitnodiging">
+<div class="info-kop"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span class="info-soort">Info</span><h3 id="info-uitnodiging">Geheugensteun: een uitnodiging</h3><span class="info-bij">bij deel 2</span></div>
+<div class="info-body">
+<ul>
+<li>De <strong>plaats</strong>, de <strong>dag</strong> en het <strong>uur</strong>.</li>
+<li>Wie de bijeenkomst <strong>leidt</strong>.</li>
+<li>De reden en het <strong>doel</strong>.</li>
+<li>De <strong>punten</strong> die aan bod komen.</li>
+<li>De vraag om te laten weten als je <strong>niet kan komen</strong>.</li>
+<li>In Google Agenda zet je het doel en de punten in de <strong>beschrijving</strong> en het lokaal bij <strong>Locatie</strong>.</li>
+</ul>
+</div>
+</div>
+<p class="nodig-noot">Ziet het bij jou er zo uit? Elke regel is ingevuld.</p>
+<div class="agenda" role="img" aria-label="Tekening van de ingevulde afspraak: een titel, de dag en het uur, een locatie, een gast en een beschrijving, elk als grijs balkje."><div class="ag-kop">Afspraak · Meer opties</div><div class="ag-rij"><span>Titel toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Datum en uur: van … tot …</span><i class=""></i></div><div class="ag-rij"><span>Gasten toevoegen</span><i class="kort"></i></div><div class="ag-rij"><span>Locatie toevoegen</span><i class="kort"></i></div><div class="ag-rij groot"><span>Beschrijving toevoegen</span><span class="ag-balk"><i></i><i></i><i class="kort"></i></span></div></div><div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Zie je een welkomstvenster?</strong> Klik op <span class="ui">OK</span>. Daarna is het venster over de donkere modus er misschien ook: klik opnieuw op <span class="ui">OK</span>.</p></div>
+</div>
+<footer class="card-nav">
+  <button class="btn" type="button" data-goto="3"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 3</button>
+  <button class="btn btn-primary" type="button" data-goto="5">Stap 5 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 5 ===== -->
+    <section class="pane" id="pane-5" aria-labelledby="h-5">
+      <article class="card">
+<header class="card-head">
+<div class="tags"><span class="tag tag-step">Stap 5</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument, deel 3</span></div>
+<h2 id="h-5">Nakijken</h2>
+</header>
+<div class="card-body">
+<p class="intro">Je kijkt je eigen werk na, zoals een collega dat zou doen.</p>
+<div class="todo-box">
+<div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+<ol class="doe">
+<li><span class="doe-tekst">Beantwoord in <strong>deel 3</strong> elke vraag van de nakijklijst met <strong>ja</strong> of <strong>nee</strong>.</span><span class="sub">Kijk naar je mail en naar je afspraak, niet naar je geheugen.</span></li>
+<li><span class="doe-tekst">Verbeter elk <strong>nee</strong> in je mail of in je afspraak.</span></li>
+<li><span class="doe-tekst">Schrijf in <strong>deel 3</strong> in één zin wat je verbeterde.</span><span class="sub">Was alles ja? Dan schrijf je niets.</span></li>
+</ol>
+</div>
+<div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Zie je een nee?</strong> Verbeter het eerst. Pas daarna ga je naar de volgende stap.</p></div>
+</div>
+<footer class="card-nav">
+  <button class="btn" type="button" data-goto="4"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 4</button>
+  <button class="btn btn-primary" type="button" data-goto="6">Stap 6 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 6 ===== -->
+    <section class="pane" id="pane-6" aria-labelledby="h-6">
+      <article class="card">
+<header class="card-head met-mascotte">
+<div>
+<div class="tags"><span class="tag tag-step">Stap 6</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg> Opdracht</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument, deel 3</span></div>
+<h2 id="h-6">Inleveren</h2>
+</div>
+<img class="mascotte-kop" src="assets/mascotte/dalton_inleveren.webp" alt="" width="120" height="120">
+</header>
+<div class="card-body">
+<p class="intro">Beantwoord eerst de vragen. Zijn ze allemaal juist? Dan zie je hieronder hoe je inlevert.</p>
+          <h3 class="quiz-kop">Zelftest: drie vragen</h3>
+          <div class="quiz">
+            <div class="quiz-q" data-ok="Juist: in het kader in deel 2." data-nok="Nog niet. Waar staat de afspraak in je werkdocument?">
+              <p>1. Waar plak je de schermafbeelding van je afspraak?</p>
+              <div class="opts">
+                <button type="button">In een mail aan je leraar</button><button type="button" data-right>In het kader in deel 2 van je werkdocument</button><button type="button">In een nieuw document in je Drive</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+            <div class="quiz-q" data-ok="Juist: aan het einde van het lesuur." data-nok="Nog niet. Kijk naar het uur op het bord.">
+              <p>2. Wanneer is de deadline?</p>
+              <div class="opts">
+                <button type="button">Vrijdag om 20.00 uur</button><button type="button" data-right>Aan het einde van dit lesuur</button><button type="button">Maandag, in de volgende les</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+            <div class="quiz-q" data-ok="Juist: alleen je werkdocument." data-nok="Nog niet. Wat zie je in Classroom bij Jouw werk?">
+              <p>3. Wat lever je in?</p>
+              <div class="opts">
+                <button type="button" data-right>Alleen je werkdocument</button><button type="button">Je werkdocument en de lespagina</button><button type="button">Je afspraak uit Google Agenda</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+          </div>
+          <p class="slot" aria-live="polite" data-codewoord="INFOSESSIE"><svg class="ic ic-dicht" aria-hidden="true"><use href="#i-lock"/></svg><svg class="ic ic-open" aria-hidden="true"><use href="#i-check-circle"/></svg><span class="slot-tekst">Beantwoord de drie vragen hierboven juist. Dan zie je hier hoe je inlevert.</span></p>
+<div class="todo-box" data-na-zelftest="c6a">
+<div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+<ol class="doe">
+<li><span class="doe-tekst">Typ het <strong>codewoord</strong> in <strong>deel 3</strong> van je werkdocument.</span><span class="sub">Het codewoord staat in de groene regel hierboven.</span></li>
+<li><details class="stapjes"><summary><span class="doe-tekst">Lever in.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik in je opdracht in <strong class="met-logo"><img class="logo" src="assets/logos/classroom.svg" alt="">Google Classroom</strong> rechts op <span class="ui">Inleveren</span>.</p><div class="mock mock-opdracht mini-mock" role="img" aria-label="Tekening van de opdracht. Bij Jouw werk staat de knop Inleveren in een rood kader."><div class="mo-midden"><div class="mo-titel"><img class="logo" src="assets/logos/classroom.svg" alt="">Communicatie 5 — E1: de e-mailopdracht</div><div class="mo-chip"><img class="logo" src="assets/logos/lespagina.webp" alt=""><span>Lespagina · Les 15</span></div></div><div class="mo-werk"><div class="mo-werk-kop">Jouw werk</div><div class="mo-chip"><img class="logo" src="assets/logos/docs.svg" alt=""><span>CO5_E1-e-mailopdracht</span></div><div class="mo-knop wijs">Inleveren</div></div></div></li>
+<li><p>Klik in het venster <em>Je werk inleveren?</em> nog eens op <span class="ui">Inleveren</span>.<span class="sub">Daarna staat er rechts <em>Ingeleverd</em>.</span></p></li>
+</ol>
+</details></li>
+</ol>
+<figure class="clip"><video src="assets/video/inleveren.mp4" poster="assets/video/inleveren.jpg" autoplay loop muted playsinline controls preload="metadata" aria-label="Filmpje: rechts, bij Jouw werk, op Inleveren klikken; in het venster Je werk inleveren? nog eens op Inleveren klikken; daarna staat er Ingeleverd."></video><figcaption>Filmpje van 10 seconden: zo lever je in. Het is een andere opdracht, de knoppen zijn dezelfde.</figcaption></figure>
+</div>
+</div>
+<footer class="card-nav">
+  <button class="btn" type="button" data-goto="5"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 5</button>
+  <button class="btn" type="button" data-goto="start">Naar het begin</button>
+</footer>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ============ RECHTS: de checklist ============ -->
+  <aside class="checklist leeg" id="checklist" aria-labelledby="h-cl">
+    <div class="cl-head">
+      <h2 id="h-cl">Checklist</h2>
+      <div class="cl-bar" role="progressbar" aria-label="Voortgang" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="cl-fill" id="clFill"></div></div>
+      <p class="cl-count" id="clCount">0 van 0 klaar</p>
+    </div>
+    <div class="cl-body">
+      <div class="cl-group" data-step="1"><h3>1 · Klaarzetten</h3>
+        <label class="cl-item"><input type="checkbox" id="c1a"><span>Werkdocument open, met mijn naam in de titel</span></label>
+        <label class="cl-item"><input type="checkbox" id="c1b"><span>Bij elke notitie mail, agenda of allebei getypt</span></label>
+      </div>
+      <div class="cl-group" data-step="2"><h3>2 · De ontvangers en de bijlage</h3>
+        <label class="cl-item"><input type="checkbox" id="c2a"><span>Aan, Cc en Bcc ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c2b"><span>Onderwerp met datum ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c2c"><span>Bijlage toegevoegd (chip of de naam)</span></label>
+      </div>
+      <div class="cl-group" data-step="3"><h3>3 · De tekst van de mail</h3>
+        <label class="cl-item"><input type="checkbox" id="c3a"><span>Aanspreking en inleiding geschreven</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3b"><span>Boodschap en slot geschreven</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3c"><span>Slotgroet en handtekening geschreven</span></label>
+      </div>
+      <div class="cl-group" data-step="4"><h3>4 · De infosessie in de agenda</h3>
+        <label class="cl-item"><input type="checkbox" id="c4a"><span>Titel, dag, uur, locatie en beschrijving ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4b"><span>Mijn leraar uitgenodigd</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4c"><span>Schermafbeelding geplakt in deel 2</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4d"><span>Opgeslagen en uitnodiging verstuurd</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4e"><span>Deel 2 overgetypt</span></label>
+      </div>
+      <div class="cl-group" data-step="5"><h3>5 · Nakijken</h3>
+        <label class="cl-item"><input type="checkbox" id="c5a"><span>Nakijklijst beantwoord</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5b"><span>Nee's verbeterd en één zin geschreven</span></label>
+      </div>
+      <div class="cl-group" data-step="6"><h3>6 · Inleveren</h3>
+        <label class="cl-item"><input type="checkbox" id="c6a"><span>Zelftest: alle drie juist</span></label>
+        <label class="cl-item"><input type="checkbox" id="c6b"><span>Codewoord getypt</span></label>
+        <label class="cl-item"><input type="checkbox" id="c6c"><span>Werkdocument ingeleverd</span></label>
+      </div>
+    </div>
+    <div class="cl-foot">
+      <button class="btn cl-toggle" type="button" id="clToggle" aria-expanded="false">Toon alles</button>
+      <button class="btn" type="button" id="btnReset">Vinkjes wissen</button>
+      <p class="cl-note">Je vinkjes staan alleen op deze computer. Er wordt niets doorgestuurd.</p>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ Klaar! ============ -->
+<div class="klaar-overlay" id="klaar" role="dialog" aria-modal="true" aria-labelledby="h-klaar" hidden>
+  <div class="klaar-card">
+    <img class="mascotte-klaar" src="assets/mascotte/dalton_succes.webp" alt="" width="150" height="150">
+    <h2 id="h-klaar">Tom is geholpen!</h2>
+    <p>Alles is afgevinkt.</p>
+    <p>Vertrek je? <strong>Log uit</strong>, of druk op <span class="key">Windows</span> + <span class="key">L</span>.</p>
+    <button class="btn btn-primary" type="button" id="klaarSluit">Sluiten</button>
+  </div>
+</div>
+
+<footer class="site">
+  Toegepaste Informatica · GO! Dalton Gent · 2de graad Organisatie en logistiek · NovaDepot is een fictief bedrijf. Alle namen, nummers en e-mailadressen zijn verzonnen.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

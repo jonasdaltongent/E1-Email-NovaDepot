@@ -1,0 +1,26 @@
+{
+  "lesid": "novadepot-e1",
+  "lesnr": "15",
+  "titel": "Communicatie 5 - E1: de e-mailopdracht (mail met bijlage + agenda-uitnodiging voor de infosessie)",
+  "week": 11,
+  "schooljaar": "2026-2027",
+  "datum": "2026-11-18",
+  "_opmerking_datum": "Uur 2 van W11: 3ORLO wo 18 nov (2de uur, tot 10.05), 4ORLOb wo 18 nov (3de uur, tot 11.15), 4ORLOa do 19 nov (7de uur, tot 14.35). Deadline = einde van het lesuur, per klas in Classroom.",
+  "klasgroepen": [
+    "ORLO"
+  ],
+  "_opmerking_klasgroepen": "De klasgroepcode moet 'ORLO' zijn: daarmee telt het blad 'ORLO' de regels op. De echte klasnamen staan hieronder.",
+  "klasnaam": "3ORLO, 4ORLOa, 4ORLOb",
+  "finaliteit": "arbeidsmarktgerichte finaliteit",
+  "lesduur_minuten": 50,
+  "evaluatie": "summatief (E1)",
+  "deadline": "2026-11-19T14:35",
+  "_opmerking_deadline": "Per klas het einde van het lesuur: 3ORLO 2026-11-18T10:05, 4ORLOb 2026-11-18T11:15, 4ORLOa 2026-11-19T14:35.",
+  "bron": "https://github.com/jonasdaltongent/E1-Email-NovaDepot",
+  "doelen": [
+    {"code": "BV2_04.01", "rol": "kern"},
+    {"code": "BK2_02.01.02", "rol": "kern"},
+    {"code": "BK2_02.10.03", "rol": "kern"},
+    {"code": "BV2_04.04", "rol": "ondersteunend"}
+  ]
+}
